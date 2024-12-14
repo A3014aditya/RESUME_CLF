@@ -13,3 +13,4 @@ streamlit
 xgboost
 optuna
 scipy
+gunicorn
