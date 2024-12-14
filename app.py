@@ -9,7 +9,10 @@ import sys
 import nltk
 import time
 import pdfplumber
-import docx      
+import docx  
+import numpy as np
+from scipy.linalg import get_blas_funcs
+from numpy import triu    
 from pathlib import Path
 import docx
 from gensim.models import Word2Vec, KeyedVectors
