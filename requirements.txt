@@ -1,0 +1,15 @@
+ipykernel
+pandas 
+numpy
+matplotlib
+seaborn
+scikit-learn
+pdfplumber
+python-docx
+nltk
+gensim
+tensorflow
+streamlit
+xgboost
+optuna
+scipy
