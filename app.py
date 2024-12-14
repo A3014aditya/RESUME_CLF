@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
+import joblib
 import gensim 
 import re
 import os
@@ -26,11 +27,11 @@ Lemmatizer = WordNetLemmatizer()
 import warnings
 warnings.filterwarnings("ignore")
 
-wrd2vec_path = os.path.join('artifacts','word2vec.pkl')
-Clf_model_path = os.path.join('artifacts','model.pkl')
+wrd2vec_path = os.path.join('artifacts','model.pkl')
+Clf_model_path = os.path.join('artifacts','rndm.pkl')
 # Pickle files 
-wrod2vec = pickle.load(open(wrd2vec_path,'rb'))
-Clf_model = pickle.load(open(Clf_model_path,'rb'))
+wrod2vec = joblib.load(wrd2vec_path)
+Clf_model = joblib.load(Clf_model_path)
 
 nltk.download('stopwords')
 nltk.download('wordnet')
