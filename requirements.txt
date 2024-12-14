@@ -1,3 +1,4 @@
+--upgrade pip
 ipykernel
 absl-py==2.1.0
 alembic==1.14.0
